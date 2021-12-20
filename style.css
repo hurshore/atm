@@ -28,6 +28,9 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+img {
+  width: 1.5rem;
+}
 .container {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 0.5rem;
@@ -78,17 +81,35 @@ a {
 .card-body .card-content:nth-last-child(1) {
   border-bottom: 2px solid #32cd32;
 }
+.card-body .card-content span {
+  display: flex;
+  align-items: center;
+}
+.card-body .card-content span img {
+  margin-right: 0.7rem;
+}
 .card-footer {
   text-align: center;
   padding: 1.5rem 0;
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 450px) {
   .container {
-    width: 20rem;
+    width: 21rem;
     padding: 1rem;
   }
 
   .nav-links li {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    width: 18rem;
+  }
+
+  .card-body .card-content {
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
   }
 }
