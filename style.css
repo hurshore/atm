@@ -69,18 +69,18 @@ a {
 }
 .card-body .card-content {
   padding: 1rem 1.5rem;
-  border-top: 1px solid #32cd32;
+  border-top: 2px solid #32cd32;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card-body .card-content:nth-last-child(1) {
-  border-bottom: 1px solid #32cd32;
+  border-bottom: 2px solid #32cd32;
 }
 .card-footer {
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 @media screen and (max-width: 500px) {
   .container {
