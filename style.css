@@ -44,11 +44,10 @@ a {
 }
 .container .nav-links {
   display: flex;
+  justify-content: space-between;
   padding: 1rem 0;
 }
-.nav-links li {
-  margin-left: 0.8rem;
-}
+
 .card-container {
   padding: 1rem 1.2rem;
   border: 1px solid #32cd32;
@@ -63,14 +62,18 @@ a {
 
 .card-container .skewCard1 {
   border-right: 1px solid #32cd32;
+  transform: skewY(10deg);
 }
 .card-container .skewCard2 {
-  transform: rotate(-5deg) skewY(-2deg);
+  transform: skewY(-10deg);
 }
 .card-body .card-content {
-  transform: rotate(5deg) skewY(-2deg);
   padding: 1rem 1.5rem;
   border-top: 1px solid #32cd32;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-body .card-content:nth-last-child(1) {
   border-bottom: 1px solid #32cd32;
@@ -84,11 +87,8 @@ a {
     width: 20rem;
     padding: 1rem;
   }
-  .card-body .card-content {
-    height: 2rem;
-    width: 100%;
-    display: flex;
-    padding: 0.6rem 0.5rem;
-    align-items: center;
+
+  .nav-links li {
+    font-size: 12px;
   }
 }
