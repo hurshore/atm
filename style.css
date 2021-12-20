@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("/images/atm.jpg");
+
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-family: "Mulish", sans-serif;
+}
+body::before {
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  display: block;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  max-width: 30rem;
+  padding: 1.5rem 2rem;
+  margin: 0 1rem;
+  z-index: 999;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.container .header {
+  text-align: center;
+  padding: 0.7rem;
+}
+.container .nav-links {
+  display: flex;
+  padding: 1rem 0;
+}
+.nav-links li {
+  margin-left: 0.8rem;
+}
+.card-container {
+  padding: 1rem 1.2rem;
+  border: 1px solid #32cd32;
+  border-radius: 0.6rem;
+  width: 100%;
+}
+.card-container .card-body {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.card-container .skewCard1 {
+  border-right: 1px solid #32cd32;
+}
+.card-container .skewCard2 {
+  transform: rotate(-5deg) skewY(-2deg);
+}
+.card-body .card-content {
+  transform: rotate(5deg) skewY(-2deg);
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #32cd32;
+}
+.card-body .card-content:nth-last-child(1) {
+  border-bottom: 1px solid #32cd32;
+}
+.card-footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 20rem;
+    padding: 1rem;
+  }
+}
