@@ -79,9 +79,16 @@ a {
   text-align: center;
   padding: 1rem 0;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .container {
     width: 20rem;
     padding: 1rem;
+  }
+  .card-body .card-content {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    padding: 0.6rem 0.5rem;
+    align-items: center;
   }
 }
